@@ -2,7 +2,9 @@
 import sys
 
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import get_user_model
+User = get_user_model()
+
 from django.utils.translation import ugettext_lazy as _
 
 from cms.models.managers import PageModeratorStateManager
