@@ -2,8 +2,7 @@
 import sys
 
 from django.db import models
-from django.contrib.auth import get_user_model
-User = get_user_model()
+from user_auth.models import User
 
 from django.utils.translation import ugettext_lazy as _
 
